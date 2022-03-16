@@ -1,13 +1,21 @@
 let ball1;
 let ball2;
+let Balls = [];
 function setup() {
   createCanvas(400, 400);
-  ball1 = new Ball(100,100);
-  ball2 = new Ball(200,100);
+
 }
 
 function draw() {
   background(220);
-  ball1.show();
-  ball2.show();
+
+
+  for (let i = 0; i < Balls.length; i++){
+    Balls[i].show();
+  }
+  // console.log(Balls);
+}
+function mousePressed(){
+  Balls.push(new Ball(mouseX, mouseY));
+  console.log(Balls);
 }
