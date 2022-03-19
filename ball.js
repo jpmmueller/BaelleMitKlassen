@@ -12,6 +12,6 @@ class Ball {
 
     update(){
         this.y = this.y + this.yspeed;
-        this.yspeed = this.yspeed + 0.03;
+        this.yspeed = this.yspeed + 0.07;
     }
 }
